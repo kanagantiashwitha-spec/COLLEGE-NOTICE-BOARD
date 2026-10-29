@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | College Notice Board</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">🎓 CampusConnect</div>
+    <h1>College Notice Board</h1>
+    <p>Stay informed. Stay connected.</p>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <h2>📢 Publish a Notice</h2>
+
+      <form id="notice-form">
+        <label for="title">Notice Title</label>
+        <input id="title" maxlength="120"
+               placeholder="Enter notice title" required>
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Choose a category</option>
+          <option>Events</option>
+          <option>Examinations</option>
+          <option>Academics</option>
+          <option>Announcements</option>
+        </select>
+
+        <label for="content">Notice Details</label>
+        <textarea id="content" maxlength="3000"
+                  placeholder="Write your notice here..."
+                  required></textarea>
+
+        <button type="submit">Publish Notice</button>
+        <p id="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="notice-section">
+      <h2>📚 Latest Notices</h2>
+      <p id="notice-count">Loading notices...</p>
+      <div id="notices" class="notice-grid"></div>
+    </section>
+  </main>
+
+  <footer>Made for our college community 💙</footer>
+</body>
+</html>

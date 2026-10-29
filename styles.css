@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5ff;
+  color: #24304a;
+}
+
+.hero {
+  padding: 45px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 30px auto;
+}
+
+.form-card {
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px #18254a12;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #d5dbee;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 13px 22px;
+  color: white;
+  background: #5145e5;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #392fc0;
+}
+
+.notice-section {
+  margin-top: 35px;
+}
+
+.notice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.notice-card {
+  padding: 20px;
+  background: white;
+  border-left: 5px solid #7c3aed;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px #18254a0c;
+  overflow-wrap: anywhere;
+}
+
+.notice-card h3 {
+  margin-top: 0;
+  color: #5145e5;
+}
+
+.notice-card small {
+  color: #68738b;
+}
+
+footer {
+  margin-top: 45px;
+  padding: 22px;
+  text-align: center;
+  color: #68738b;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
